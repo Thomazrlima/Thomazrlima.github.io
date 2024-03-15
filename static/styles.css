@@ -5,6 +5,7 @@
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
+    background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
     background-size: 100%;
     color: #eceeff;
 }
@@ -72,7 +73,7 @@ nav a.active {
 .title {
     color: #ffd700;
     font-weight: 900;
-    font-size: 3rem; /* Alterado o tamanho do título */
+    font-size: 3rem;
     width: 13ch;
     white-space: nowrap;
     overflow: hidden;
