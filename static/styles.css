@@ -6,12 +6,17 @@ body {
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
     background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
-    background-size: cover;
+    background-size: 100%;
     color: #eceeff;
 }
 
 h1 {
-    color: #ffd700;
+    color: #ffff00;
+    font-size: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000000;
+    box-shadow: 0 0 10px #ffff00;
+    transform: rotate(45deg);
 }
 
 .social-icon {
