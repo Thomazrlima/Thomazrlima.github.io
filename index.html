@@ -1,51 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Gameboy Text Animation</title>
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
-    * {
-        margin: 0;
-        font-family: 'Press Start 2P', monospace;
-        scroll-behavior: smooth;
-        background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
-        background-size: cover;
-        color: #eceeff;
-    }
-
-    .gameboy-text {
-        font-size: 3rem;
-        overflow: hidden;
-        border-right: 3px solid #ffd700;
-        white-space: nowrap;
-        margin: 0;
-        padding: 0;
-        animation: typing 3s steps(40, end);
-    }
-
-    @keyframes typing {
-        from {
-            width: 0;
-        }
-        to {
-            width: 100%;
-        }
-    }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomaz Rodrigues Lima</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="https://www.pokemasters.net/pokedex/thumb.php?src=/pokedex/images/pokemon/201019.png&w=200px&h=200px">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <script defer src="/static/script.js"></script>
     <header>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#about">Sobre</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contact">Contato</a>
         </nav>
     </header>
-
+ 
     <section id="about">
         <h1 class="title gameboy-text">Salut, je m'appelle Thomaz</h1>
         <p class="intro hidden">Estudando Ciência da Computação no Cesar School. Ah, também estou bem interessado em; IA, Visão Computacional e como poderíamos mesclar isso com o estudo da história. Já tenho experiência com: Python, C, Java, HTML, CSS, Django e SQLite.</p>
@@ -54,40 +26,78 @@
         </div>
     </section>
 
-    <div class="card-wrapper">
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Card Image">
-            <div class="card-content">
-                <h2>Title 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
+    <section id="portfolio">
+        <h1 class="sub-title">portfólio</h1>
+        <div class="card-wrapper">
+            <div class="card hidden">
+                <a href="https://github.com/P-E-N-T-E-S/Archives.Sol" target="_blank">
+                <img src="https://i.imgur.com/mmwESCw.jpeg">
+                <div class="card-content">
+                    <h2>Archives.Sol</h2>
+                    <p>O Archives.Sol é um repositório de banco de dados abrangente que engloba áudios, fotos, vídeos e textos. Ele é alimentado por contribuições da comunidade e está disponível para uso por todos os interessados.<br>Python, HTML, CSS, Rust, JavaScript</p>
+                </div>
+                </a>
+            </div>
+            <div class="card hidden">
+                <a href="https://github.com/P-E-N-T-E-S/Kolekto" target="_blank">
+                <img src="https://i.imgur.com/ZsVMrH6.png">
+                <div class="card-content">
+                    <h2>KOLEKTO</h2>
+                    <p>O Kolekto é um aplicativo com o objetivo de facilitar a compra e venda de produtos colecionáveis, conectando colecionadores e entusiastas.<br><br>Django, HTML, CSS e JavaScript.</p>
+                </div>
+                </a>
+            </div>
+            <div class="card hidden">
+                <a href="https://github.com/P-E-N-T-E-S/Pris.ME" target="_blank">
+                <img src="https://i.imgur.com/NlSv7Qf.png">
+                <div class="card-content">
+                    <h2>Pris.ME</h2>
+                    <p>O Pris.ME é uma plataforma white-label projetada para auxiliar ONGs na gestão eficiente de suas operações.<br><br>Django, HTML e CSS.</p>
+                </div>
+                </a>
+            </div>
+            <div class="card hidden">
+                <a href="https://github.com/P-E-N-T-E-S/Pong2" target="_blank">
+                <img src="https://i.imgur.com/Grclufq.png">
+                <div class="card-content">
+                    <h2>PONG 2</h2>
+                    <p>O Pong2 é uma reinvenção do clássico jogo Pong incluindo novos recursos.<br><br>C</p>
+                </div>
+                </a>
             </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Card Image">
-            <div class="card-content">
-                <h2>Title 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
-            </div>
+    <section id="contact" class="hidden">
+        <h1 class="sub-title">contato</h1>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/thomazrlima/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.github.com/Thomazrlima" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="mailto:thomazlima21@hotmail.com" class="social-icon" target="_blank"><i class="fa fa-envelope"></i></a>       
         </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/400" alt="Card Image">
-            <div class="card-content">
-                <h2>Title 3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 Your Website</p>
+        <div>Desenvolvido por Thomaz.</div>
+        <div>Todos os direitos reservados &copy;</div>
     </footer>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const introElement = document.querySelector('.intro');
-            introElement.classList.remove('hidden');
+            const text = document.querySelector('.gameboy-text');
+            const originalText = text.textContent;
+            text.textContent = '';
+
+            function typeText(index) {
+                text.textContent = originalText.slice(0, index);
+                if (index < originalText.length) {
+                    setTimeout(function () {
+                        typeText(index + 1);
+                    }, 100); 
+                }
+            }
+
+            typeText(0);
         });
     </script>
 </body>
