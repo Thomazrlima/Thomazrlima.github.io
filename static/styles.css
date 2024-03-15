@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chopin+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
 body {
@@ -13,11 +14,13 @@ body {
 h1 {
     text-align: center;
     margin-top: 2rem;
-    color: #00ff9f;
+    color: purple;
+    font-family: 'Chopin Script', cursive;
 }
 
 p {
     text-align: center;
+    color: white;
 }
 
 div {
@@ -38,7 +41,8 @@ img {
 
 .section-header {
     text-align: center;
-    color: #00ff9f;
+    color: purple;
+    font-family: 'Chopin Script', cursive;
     font-size: 1.5rem;
     margin-top: 2rem;
 }
