@@ -10,7 +10,11 @@ body {
     color: #eceeff;
 }
 
-h1{
+h1 {
+    color: #ffd700;
+}
+
+.social-icon {
     color: #ffd700;
 }
 
