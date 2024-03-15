@@ -1,108 +1,282 @@
 @import url('https://fonts.googleapis.com/css2?family=Chopin+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;700&display=swap');
 
-body {
-    font-family: 'Roboto Mono', monospace;
-    background-image: url('https://r4.wallpaperflare.com/wallpaper/490/945/282/pokemon-ghost-pokemon-haunter-pokemon-wallpaper-5201e250bd66ceeb1ab8f2f570980932.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+* {
     margin: 0;
-    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+    background-color: #2a2c3d;
+    color: #eceeff;
 }
 
-h1 {
-    text-align: center;
-    margin-top: 2rem;
-    color: purple;
-    font-family: 'Chopin Script', cursive;
+section {
+    display: grid;
+    place-items: end;
+    align-content: center;
+    min-height: 100vh;
+    padding-inline: 14rem;
+    position: relative;
+    overflow: hidden;
 }
 
-p {
-    text-align: center;
-    color: white;
+section:nth-child(odd) {
+    place-items: start;
 }
 
-div {
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
+    background-color: #2a2c3d;
+    padding: 20px 120px;
+    width: auto;
+    justify-content: space-evenly;
 }
 
-div a {
-    margin: 0.5rem;
+nav a {
+    font-size: 18px;
+    color: #eceeff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+nav a:hover,
+nav a.active {
+    color: #00ff9f;
 }
 
-.section-header {
-    text-align: center;
-    color: purple;
-    font-family: 'Chopin Script', cursive;
-    font-size: 1.5rem;
-    margin-top: 2rem;
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: 1s;
 }
 
-.section-content {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 1rem;
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
-.card {
-    background-color: #181A1F;
-    color: #C9D1D9;
-    border-radius: 10px;
-    padding: 1rem;
-    text-align: center;
-    width: 250px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+@media(prefers-reduced-motion) {
+    .hidden {
+        transition: none;
+    }
+}
+
+.title {
+    color: #00ff9f;
+    font-weight: 900;
+    font-size: 6rem;
+    width: 13ch;
+    animation: typing 2s steps(13), blink .4s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+h1::selection,
+p::selection,
+nav a::selection {
+    background-color: #3d3f57;
+}
+
+@keyframes blink {
+    50% { border-color: transparent }
+}
+
+@keyframes typing {
+    from { width: 0 }
+}
+
+.intro {
+    width: 60rem;
+    font-size: 18px;
+    margin-top: 1%;
+    line-height: 1.6;
+}
+
+.sub-title {
+    font-size: 60px;
+    color: #d8dcff;
+}
+
+.socials {
+    margin-top: 1%;
+}
+
+.social-icon {
+    font-size: 36px;
     transition: transform 0.3s ease-in-out;
+    margin-right: 2rem;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-}
-
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-bottom: 1rem;
-}
-
-.card-title {
-    font-size: 1.25rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
-
-.card-description {
-    font-size: 1rem;
-    line-height: 1.5;
+a:hover .fa,
+a:hover .fab {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #00ff9f;
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #181A1F;
-    color: #C9D1D9;
+    display: grid;
+    place-items: center;
+    padding: 1%;
+    opacity: 70%;
 }
 
-footer a {
-    color: #00ff9f;
-    text-decoration: none;
-    font-weight: bold;
+#about a span {
+    position: absolute;
+    margin-top: 15rem;
+    margin-inline: 42rem;
+    width: 24px;
+    height: 24px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-animation: sdb05 1.5s infinite;
+    animation: sdb05 1.5s infinite;
+    box-sizing: border-box;
 }
 
-.footer-links {
+@-webkit-keyframes sdb05 {
+    0% {
+        -webkit-transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+@keyframes sdb05 {
+    0% {
+        transform: rotate(-45deg) translate(0, 0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-45deg) translate(-20px, 20px);
+        opacity: 0;
+    }
+}
+
+.card-wrapper {
+    margin-top: 3rem;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
-    margin-top: 0.5rem;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.card {
+    width: 36rem;
+    height: 18rem;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #3D3F57;
+    opacity: 1;
+}
+
+.card img {
+    position: relative;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: opacity 0.2s ease-out;
+}
+
+.card-content h2 {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-weight: bold;
+    background-color: transparent;
+    color: purple;
+    font-family: 'Chopin Script', cursive;
+}
+
+.card-content p {
+    position: absolute;
+    background-color: transparent;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+    inset: auto auto 80px 30px;
+    color: white;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.card:hover img {
+    transition: opacity .3s ease-in;
+    opacity: 0.1;
+}
+
+.card:hover p {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding-inline: 10%;
+    }
+
+    .title {
+        font-size: 38px;
+    }
+    .intro {
+        width: 20rem;
+        font-size: 13px;
+    }
+
+    nav {
+        gap: 2rem;
+    }
+
+    #about a span {
+        margin-top: 8rem;
+        margin-inline: 8.8rem;
+    }
+
+    .social-icon {
+        font-size: 40px;
+    }
+
+    .card {
+        width: 20
+    }
 }
