@@ -9,6 +9,10 @@
     color: #eceeff;
 }
 
+.card-content h2 {
+    background-color: transparent;
+}
+
 section {
     display: grid;
     place-items: end;
