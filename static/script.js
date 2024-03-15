@@ -1,27 +1,37 @@
 
-document.addEventListener('DOMContentLoaded', function () {
-    const intro = document.querySelector('.intro');
-    const cards = document.querySelectorAll('.card');
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll('header nav a');
 
-    setTimeout(function () {
-        intro.classList.add('show');
-    }, 500);
+    window.onscroll = () => {
 
-    window.addEventListener('scroll', function () {
-        cards.forEach(card => {
-            if (isElementInViewport(card)) {
-                card.classList.add('show');
+        sections.forEach(sec => {
+
+            let top = window.scrollY;
+            let offset = sec.offsetTop - 150;
+            let height = sec.offsetHeight;
+            let id = sec.getAttribute('id');
+
+            if (top >= offset && top < offset + height) {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
+            }
+        });
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            console.log(entry);
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            } else {
+                entry.target.classList.remove('show');
             }
         });
     });
 
-    function isElementInViewport(el) {
-        const rect = el.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.left >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-        );
-    }
+    const hiddenElements = document.querySelectorAll(".hidden");
+    hiddenElements.forEach((el) => observer.observe(el));
 });
