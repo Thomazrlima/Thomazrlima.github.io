@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 * {
     margin: 0;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
     background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
     background-size: cover;
