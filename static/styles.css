@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-
 * {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
@@ -78,7 +76,7 @@ nav a.active {
 .title {
     color: #ffd700;
     font-weight: 900;
-    font-size: 6rem;
+    font-size: 3rem; /* Alterado o tamanho do título */
     width: 13ch;
     white-space: nowrap;
     overflow: hidden;
