@@ -1,19 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2');
 
 * {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
-    background-size: cover;
+    background-size: 100%;
     color: #eceeff;
-}
-
-.card-content h2 {
-    background-color: transparent;
-}
-
-.intro hidden {
-    background-color: transparent;
 }
 
 section {
@@ -216,14 +209,12 @@ footer {
     margin: 0;
     transition: inset .3s .3s ease-out;
     font-weight: bold;
-    background-color: transparent;
     color: #ffd700;
     font-family: 'Roboto Mono', monospace;
 }
 
 .card-content p {
     position: absolute;
-    background-color: transparent;
     opacity: 0;
     max-width: 80%;
     transition: opacity .3s ease-out;
