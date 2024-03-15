@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2');
 
-* {
+body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
     background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
-    background-size: 100%;
+    background-size: cover;
     color: #eceeff;
+}
+
+h1{
+    color: #ffd700;
 }
 
 section {
@@ -191,7 +195,6 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffd00057;
     opacity: 1;
 }
 
