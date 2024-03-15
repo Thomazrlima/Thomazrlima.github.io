@@ -4,7 +4,6 @@
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
-    background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
     background-size: cover;
     color: #eceeff;
 }
@@ -13,7 +12,7 @@
     background-color: transparent;
 }
 
-.intro hidden{
+.intro hidden {
     background-color: transparent;
 }
 
