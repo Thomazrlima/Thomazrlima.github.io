@@ -15,8 +15,6 @@ h1 {
     font-size: 2rem;
     text-align: center;
     text-shadow: 2px 2px 2px #000000;
-    box-shadow: 0 0 10px #ffff00;
-    transform: rotate(45deg);
 }
 
 .social-icon {
