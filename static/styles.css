@@ -13,6 +13,10 @@
     background-color: transparent;
 }
 
+.intro hidden{
+    background-color: transparent;
+}
+
 section {
     display: grid;
     place-items: end;
@@ -61,42 +65,6 @@ nav a.active {
     transition: 1s;
 }
 
-.intro.hidden {
-    opacity: 1;
-    filter: blur(0);
-    overflow: hidden;
-}
-
-.typed-cursor {
-    display: inline-block;
-    width: 1px;
-    height: 1.5em;
-    background-color: #ffd700;
-    animation: blink 0.7s infinite;
-}
-
-@keyframes blink {
-    50% {
-        opacity: 0;
-    }
-}
-
-.typed-text {
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid #ffd700;
-    animation: typing 5s steps(40, end);
-}
-
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
 .show {
     opacity: 1;
     filter: blur(0);
@@ -112,7 +80,7 @@ nav a.active {
 .title {
     color: #ffd700;
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 3rem; /* Alterado o tamanho do título */
     width: 13ch;
     white-space: nowrap;
     overflow: hidden;
@@ -123,15 +91,6 @@ h1::selection,
 p::selection,
 nav a::selection {
     background-color: #e9c217;
-}
-
-section {
-    display: grid;
-    place-items: end;
-    align-content: center;
-    min-height: 100vh;
-    padding-inline: 14rem;
-    position: relative;
 }
 
 .intro {
@@ -239,7 +198,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #ffd000;
+    background-color: #ffd00057;
     opacity: 1;
 }
 
