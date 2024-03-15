@@ -18,32 +18,77 @@
 
     .gameboy-text {
         font-size: 3rem;
+        overflow: hidden;
+        border-right: 3px solid #ffd700;
+        white-space: nowrap;
+        margin: 0;
+        padding: 0;
+        animation: typing 3s steps(40, end);
+    }
+
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
     }
 </style>
 </head>
 <body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
     <section id="about">
-        <h1 class="title gameboy-text">Salut, je m'a...</h1>
+        <h1 class="title gameboy-text">Salut, je m'appelle Thomaz</h1>
         <p class="intro hidden">Estudando Ciência da Computação no Cesar School. Ah, também estou bem interessado em; IA, Visão Computacional e como poderíamos mesclar isso com o estudo da história. Já tenho experiência com: Python, C, Java, HTML, CSS, Django e SQLite.</p>
         <div class="btn-container">
             <a href="#portfolio"><span></span></a>
         </div>
     </section>
 
+    <div class="card-wrapper">
+        <div class="card">
+            <img src="https://via.placeholder.com/400" alt="Card Image">
+            <div class="card-content">
+                <h2>Title 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400" alt="Card Image">
+            <div class="card-content">
+                <h2>Title 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/400" alt="Card Image">
+            <div class="card-content">
+                <h2>Title 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae justo velit.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Website</p>
+    </footer>
+
     <script>
-        const text = "Salut, je m'appelle Thomaz";
-        let index = 0;
-
-        function typeEffect() {
-            const titleElement = document.querySelector('.title');
-            if (index < text.length) {
-                titleElement.textContent += text.charAt(index);
-                index++;
-                setTimeout(typeEffect, 100);
-            }
-        }
-
-        typeEffect();
+        document.addEventListener('DOMContentLoaded', function () {
+            const introElement = document.querySelector('.intro');
+            introElement.classList.remove('hidden');
+        });
     </script>
 </body>
 </html>
