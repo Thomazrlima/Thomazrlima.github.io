@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll('header nav a');
+    const gameboyTextElements = document.querySelectorAll(".gameboy-text");
 
     window.onscroll = () => {
         sections.forEach(sec => {
@@ -33,6 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const hiddenElements = document.querySelectorAll(".hidden");
     hiddenElements.forEach((el) => {
+        observer.observe(el);
+    });
+
+    gameboyTextElements.forEach((el) => {
         observer.observe(el);
     });
 

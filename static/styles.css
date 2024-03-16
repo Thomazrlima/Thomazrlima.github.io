@@ -5,25 +5,24 @@ body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
-    background-image: url('https://giffiles.alphacoders.com/215/215450.gif');
-    background-size: 100%;
+    background-color: #0174BE;
     color: #eceeff;
 }
 
 h1 {
-    color: #ffff00;
+    color: #FFC436;
     font-size: 2rem;
     text-align: center;
     text-shadow: 2px 2px 2px #000000;
 }
 
 .social-icon {
-    color: #ffd700;
+    color: #FFC436;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 section {
     display: grid;
-    place-items: end;
     align-content: center;
     min-height: 100vh;
     padding-inline: 14rem;
@@ -43,15 +42,16 @@ header {
 
 nav {
     display: flex;
-    background-color: #2a2c3d;
-    padding: 0.6rem 4rem;
+    background-color: #0C356A;
+    padding: 20px 120px;
     width: auto;
     justify-content: space-evenly;
+    text-shadow: 2px 2px 2px #000000;
 }
 
 nav a {
-    font-size: 0.6rem;
-    color: #eceeff;
+    font-size: 18px;
+    color: #FFF0CE;
     text-decoration: none;
     font-weight: 700;
     transition: .3s;
@@ -59,7 +59,7 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    color: #ffd700;
+    color: #FFC436;
 }
 
 .hidden {
@@ -82,7 +82,7 @@ nav a.active {
 }
 
 .title {
-    color: #ffd700;
+    color: #FFC436;
     font-weight: 900;
     font-size: 3rem;
     width: 13ch;
@@ -94,19 +94,18 @@ nav a.active {
 h1::selection,
 p::selection,
 nav a::selection {
-    background-color: #e9c217;
+    background-color: #FFC436;
 }
 
 .intro {
-    width: 60rem;
-    font-size: 0.6rem;
+    font-size: 18px;
     margin-top: 1%;
     line-height: 1.6;
 }
 
 .sub-title {
-    font-size: 2rem;
-    color: #ffd700;
+    font-size: 60px;
+    color: #FFC436;
 }
 
 .socials {
@@ -114,7 +113,7 @@ nav a::selection {
 }
 
 .social-icon {
-    font-size: 1.1rem;
+    font-size: 36px;
     transition: transform 0.3s ease-in-out;
     margin-right: 2rem;
 }
@@ -124,7 +123,7 @@ a:hover .fab {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    color: #ffd700;
+    color: #FFC436;
 }
 
 footer {
@@ -138,8 +137,8 @@ footer {
     position: absolute;
     margin-top: 15rem;
     margin-inline: 42rem;
-    width: 1rem;
-    height: 1rem;
+    width: 24px;
+    height: 24px;
     border-left: 1px solid #fff;
     border-bottom: 1px solid #fff;
     -webkit-transform: rotate(-45deg);
@@ -187,9 +186,10 @@ footer {
 }
 
 .card {
-    width: 36rem;
+    width: 100%;
+    max-width: 36rem;
     height: 18rem;
-    border-radius: 0.3rem;
+    border-radius: 10px;
     overflow: hidden;
     position: relative;
     transition: transform 0.3s ease-in-out;
@@ -210,18 +210,19 @@ footer {
     object-fit: cover;
     width: 100%;
     height: 100%;
-    opacity: 0.5;
+    opacity: 1;
     transition: opacity 0.2s ease-out;
 }
 
 .card-content h2 {
     position: absolute;
-    inset: auto auto 1rem 1rem;
+    inset: auto auto 30px 30px;
     margin: 0;
     transition: inset .3s .3s ease-out;
     font-weight: bold;
-    color: #ffd700;
-    font-family: 'Roboto Mono', monospace;
+    color: #FFC436;
+    text-shadow: 2px 2px 2px #000000;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
 .card-content p {
@@ -229,7 +230,7 @@ footer {
     opacity: 0;
     max-width: 80%;
     transition: opacity .3s ease-out;
-    inset: auto auto 2.3rem 1rem;
+    inset: auto auto 80px 30px;
     color: white;
     font-family: 'Roboto Mono', monospace;
 }
@@ -248,6 +249,7 @@ footer {
     -webkit-transform: scale(1.05);
     -ms-transform: scale(1.05);
     transform: scale(1.05);
+    opacity: 1;
 }
 
 @media screen and (max-width: 768px) {
@@ -256,11 +258,11 @@ footer {
     }
 
     .title {
-        font-size: 1rem;
+        font-size: 38px;
     }
     .intro {
         width: 20rem;
-        font-size: 0.4rem;
+        font-size: 13px;
     }
 
     nav {
@@ -268,15 +270,153 @@ footer {
     }
 
     #about a span {
-        margin-top: 8rem;
-        margin-inline: 8.8rem;
+        position: absolute;
+        margin-top: 15rem;
+        margin-inline: 42rem;
+        width: 24px;
+        height: 24px;
+        border-left: 1px solid #fff;
+        border-bottom: 1px solid #fff;
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        -webkit-animation: sdb05 1.5s infinite;
+        animation: sdb05 1.5s infinite;
+        box-sizing: border-box;
     }
-
-    .social-icon {
-        font-size: 1.2rem;
+    
+    @-webkit-keyframes sdb05 {
+        0% {
+            -webkit-transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
     }
-
+    
+    @keyframes sdb05 {
+        0% {
+            transform: rotate(-45deg) translate(0, 0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: rotate(-45deg) translate(-20px, 20px);
+            opacity: 0;
+        }
+    }
+    
+    .card-wrapper {
+        margin-top: 3rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        justify-content: center;
+        max-width: 100%;
+    }
+    
     .card {
-        width: 20;
+        width: 100%;
+        max-width: 36rem;
+        height: 18rem;
+        border-radius: 10px;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+    }
+    
+    .card img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: opacity 0.2s ease-out;
+    }
+    
+    .card-content h2 {
+        position: absolute;
+        inset: auto auto 30px 30px;
+        margin: 0;
+        transition: inset .3s .3s ease-out;
+        font-weight: bold;
+        color: #FFC436;
+        text-shadow: 2px 2px 2px #000000;
+        font-family: 'Press Start 2P', sans-serif;
+    }
+    
+    .card-content p {
+        position: absolute;
+        opacity: 0;
+        max-width: 80%;
+        transition: opacity .3s ease-out;
+        inset: auto auto 80px 30px;
+        color: white;
+        font-family: 'Roboto Mono', monospace;
+    }
+    
+    .card:hover img {
+        transition: opacity .3s ease-in;
+        opacity: 0.1;
+    }
+    
+    .card:hover p {
+        opacity: 1;
+        transition: opacity .5s .1s ease-in;
+    }
+    
+    .card:hover {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+        opacity: 1;
+    }
+    
+    @media screen and (max-width: 768px) {
+        section {
+            padding-inline: 10%;
+        }
+    
+        .title {
+            font-size: 38px;
+        }
+        .intro {
+            width: 20rem;
+            font-size: 13px;
+        }
+    
+        nav {
+            gap: 2rem;
+        }
+    
+        #about a span {
+            margin-top: 8rem;
+            margin-inline: 8.8rem;
+        }
+    
+        .social-icon {
+            font-size: 40px;
+        }
+    
+        .card {
+            width: 100%;
+            max-width: none;
+        }
     }
 }

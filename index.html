@@ -19,15 +19,15 @@
     </header>
  
     <section id="about">
-        <h1 color: #ffd700>Salut, je m'appelle Thomaz</h1>
-        <p class="intro hidden">Estudando Ciência da Computação no Cesar School. Ah, também estou bem interessado em; IA, Visão Computacional e como poderíamos mesclar isso com o estudo da história. Já tenho experiência com: Python, C, Java, HTML, CSS, Django e SQLite.</p>
+        <h1 class="gameboy-text">Salut, je m'appelle Thomaz</h1>
+        <p class="intro">Estudando Ciência da Computação no Cesar School. Ah, também estou bem interessado em; IA, Visão Computacional e como poderíamos mesclar isso com o estudo da história. Já tenho experiência com: Python, C, Java, HTML, CSS, Django e SQLite.</p>
         <div class="btn-container">
             <a href="#portfolio"><span></span></a>
         </div>
     </section>
 
     <section id="portfolio">
-        <h1 color: #ffd700>portfólio</h1>
+        <h1 class="gameboy-text">portfólio</h1>
         <div class="card-wrapper">
             <div class="card hidden">
                 <a href="https://github.com/P-E-N-T-E-S/Archives.Sol" target="_blank">
@@ -63,42 +63,22 @@
                     <h2>PONG 2</h2>
                     <p>O Pong2 é uma reinvenção do clássico jogo Pong incluindo novos recursos.<br><br>C</p>
                 </div>
-                </a>
-            </div>
+            </a>
         </div>
     </section>
 
     <section id="contact" class="hidden">
-        <h1 class="sub-title">contato</h1>
+        <h1 class="gameboy-text">contato</h1>
         <div class="socials">
             <a href="https://www.linkedin.com/in/thomazrlima/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://www.github.com/Thomazrlima" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:thomazlima21@hotmail.com" class="social-icon" target="_blank"><i class="fa fa-envelope"></i></a>       
+            <a href="mailto:thomazlima21@hotmail.com" class="social-icon" target="_blank"><i class="fa fa-envelope"></i></a>   >
         </div>
     </section>
 
     <footer>
-        <div>Desenvolvido por Thomaz.</div>
+        <div>Desenvolvido por Thomaz</div>
         <div>Todos os direitos reservados &copy;</div>
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const text = document.querySelector('.gameboy-text');
-            const originalText = text.textContent;
-            text.textContent = '';
-
-            function typeText(index) {
-                text.textContent = originalText.slice(0, index);
-                if (index < originalText.length) {
-                    setTimeout(function () {
-                        typeText(index + 1);
-                    }, 100); 
-                }
-            }
-
-            typeText(0);
-        });
-    </script>
 </body>
 </html>
