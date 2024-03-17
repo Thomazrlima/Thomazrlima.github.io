@@ -5,20 +5,21 @@ body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
-    background-color: #0174BE;
-    color: #eceeff;
+    background-color: #ffffff;
+    color: #000000;
+    text-shadow: 2px 2px 2px #7a7a7a;
 }
 
 h1 {
-    color: #FFC436;
+    color: #000000;
     font-size: 2rem;
     text-align: center;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 2px 2px 2px #7a7a7a;
 }
 
 .social-icon {
-    color: #FFC436;
-    text-shadow: 2px 2px 2px #000000;
+    color: #000000;
+    text-shadow: 2px 2px 2px #7a7a7a;
 }
 
 section {
@@ -42,7 +43,7 @@ header {
 
 nav {
     display: flex;
-    background-color: #0C356A;
+    background-color: #000000;
     padding: 20px 120px;
     width: auto;
     justify-content: space-evenly;
@@ -51,7 +52,7 @@ nav {
 
 nav a {
     font-size: 18px;
-    color: #FFF0CE;
+    color: #FFFFFF;
     text-decoration: none;
     font-weight: 700;
     transition: .3s;
@@ -82,7 +83,7 @@ nav a.active {
 }
 
 .title {
-    color: #FFC436;
+    color: #000000;
     font-weight: 900;
     font-size: 3rem;
     width: 13ch;
@@ -123,7 +124,7 @@ a:hover .fab {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
-    color: #FFC436;
+    color: #000000;
 }
 
 footer {
@@ -139,8 +140,8 @@ footer {
     margin-inline: 42rem;
     width: 24px;
     height: 24px;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
+    border-left: 1px solid #000000;
+    border-bottom: 1px solid #000000;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb05 1.5s infinite;
@@ -231,7 +232,7 @@ footer {
     max-width: 80%;
     transition: opacity .3s ease-out;
     inset: auto auto 80px 30px;
-    color: white;
+    color: #000000;
     font-family: 'Roboto Mono', monospace;
 }
 
@@ -275,8 +276,8 @@ footer {
         margin-inline: 42rem;
         width: 24px;
         height: 24px;
-        border-left: 1px solid #fff;
-        border-bottom: 1px solid #fff;
+        border-left: 1px solid #000000;
+        border-bottom: 1px solid #000000;
         -webkit-transform: rotate(-45deg);
         transform: rotate(-45deg);
         -webkit-animation: sdb05 1.5s infinite;
@@ -357,7 +358,7 @@ footer {
         transition: inset .3s .3s ease-out;
         font-weight: bold;
         color: #FFC436;
-        text-shadow: 2px 2px 2px #000000;
+        text-shadow: 2px 2px 2px #7a7a7a;
         font-family: 'Press Start 2P', sans-serif;
     }
     
@@ -367,7 +368,7 @@ footer {
         max-width: 80%;
         transition: opacity .3s ease-out;
         inset: auto auto 80px 30px;
-        color: white;
+        color: #000000;
         font-family: 'Roboto Mono', monospace;
     }
     
