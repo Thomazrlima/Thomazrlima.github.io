@@ -17,6 +17,27 @@ h1 {
     text-shadow: 2px 2px 2px #7a7a7a;
 }
 
+.divportifolio {
+    background-image: url("https://i.imgur.com/f7jvajs.png");
+    background-size: 100vw;
+    background-position: center;
+}
+
+.divcontato{
+    background-image: url("https://i.imgur.com/odxARe9.png");
+    background-size: 100vw;
+    background-position: center;
+}
+
+
+.imgpor{
+        width: 100vw;
+}
+
+.img {
+    width: 80vw;
+}
+
 .social-icon {
     color: #000000;
     text-shadow: 2px 2px 2px #7a7a7a;
@@ -99,9 +120,13 @@ nav a::selection {
 }
 
 .intro {
-    font-size: 18px;
-    margin-top: 1%;
-    line-height: 1.6;
+    border: 3px solid #000000;
+    padding: 20px;
+    background-color: #e0e0e0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.5rem;
+    border-radius: 5px;
 }
 
 .sub-title {
@@ -264,6 +289,7 @@ footer {
     .intro {
         width: 20rem;
         font-size: 13px;
+        border-radius: 10px;
     }
 
     nav {
