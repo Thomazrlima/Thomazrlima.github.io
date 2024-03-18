@@ -5,7 +5,7 @@ body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
     scroll-behavior: smooth;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     color: #000000;
     text-shadow: 2px 2px 2px #7a7a7a;
 }
@@ -17,20 +17,8 @@ h1 {
     text-shadow: 2px 2px 2px #7a7a7a;
 }
 
-.divportifolio {
-    background-image: url("https://i.imgur.com/f7jvajs.png");
-    background-size: 100vw;
-    background-position: center;
-}
-
-.divcontato {
-    background-image: url("https://i.imgur.com/odxARe9.png");
-    background-size: 100vw;
-    background-position: center;
-}
-
 .imgpor{
-        width: 100vw;
+        width: 92vw;
 }
 
 .img {
