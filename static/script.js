@@ -17,6 +17,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
             }
         });
+
+        let hardSkillsSection = document.getElementById("hardskills-section");
+        let hardSkillsLink = document.querySelector('a[href="#hardskills"]');
+
+        if (isElementVisible(hardSkillsSection)) {
+            hardSkillsLink.classList.add("active");
+        } else {
+            hardSkillsLink.classList.remove("active");
+        }
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -55,5 +64,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         typeChar(0);
+    }
+
+    function isElementVisible(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+        );
     }
 });
