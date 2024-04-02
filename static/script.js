@@ -4,7 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameboyTextElements = document.querySelectorAll(".gameboy-text");
 
     window.onscroll = () => {
+
         sections.forEach(sec => {
+
             let top = window.scrollY;
             let offset = sec.offsetTop - 150;
             let height = sec.offsetHeight;
@@ -17,24 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('nav a[href="#' + id + '"]').classList.add('active');
             }
         });
-
-        let hardSkillsSection = document.getElementById("hardskills-section");
-        let hardSkillsLink = document.querySelector('a[href="#hardskills"]');
-
-        if (isElementVisible(hardSkillsSection)) {
-            hardSkillsLink.classList.add("active");
-        } else {
-            hardSkillsLink.classList.remove("active");
-        }
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
+            console.log(entry);
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                if (entry.target.classList.contains('gameboy-text')) {
-                    typeText(0, entry.target);
-                }
             } else {
                 entry.target.classList.remove('show');
             }
