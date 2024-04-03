@@ -1,8 +1,6 @@
-/* @import */
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2');
 
-/* Tipos */
 body {
     margin: 0;
     font-family: 'Press Start 2P', sans-serif;
@@ -93,7 +91,6 @@ footer {
     text-align: center;
 }
 
-/* IDs */
 #about a span {
     position: absolute;
     margin-top: 15rem;
@@ -105,7 +102,6 @@ footer {
     box-sizing: border-box;
 }
 
-/* @keyframes */
 @-webkit-keyframes sdb05 {
     0% {
         -webkit-transform: rotate(-45deg) translate(0, 0);
@@ -319,22 +315,29 @@ a:hover .fab {
     section {
         padding-inline: 10%;
     }
+
+    .hall {
+        display: block;
     }
 
-    #about {
-        padding-inline: 2%;
-    }
     .glory {
-        width: calc(100% - 20px);
-        margin-right: 3rem;
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .glory img {
+        width: 80%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
     .glory p {
-        width: 100%;
-    }
-
-    section {
-        padding-inline: 10%;
+        width: 80%;
+        max-width: 100%;
+        margin: 0 auto;
     }
 
     .title {
@@ -353,44 +356,11 @@ a:hover .fab {
 
     nav a {
         font-size: 0.6rem;
-        color: #FFFFFF;
-        text-decoration: none;
-        font-weight: 700;
-        transition: .3s;
-    }
-
-    nav {
-        display: flex;
-        background-color: #000000;
-        padding: 1rem 2rem;
-        width: auto;
-        justify-content: space-evenly;
-        text-shadow: 2px 2px 2px #000000;
     }
 
     #about a span {
-        position: absolute;
         margin-top: 15rem;
         margin-inline: 42rem;
-        width: 24px;
-        height: 24px;
-        border-left: 1px solid #000000;
-        border-bottom: 1px solid #000000;
-        box-sizing: border-box;
-    }
-
-    @-webkit-keyframes sdb05 {
-        0% {
-            -webkit-transform: rotate(-45deg) translate(0, 0);
-            opacity: 0;
-        }
-        50% {
-            opacity: 1;
-        }
-        100% {
-            -webkit-transform: rotate(-45deg) translate(-20px, 20px);
-            opacity: 0;
-        }
     }
 
     @keyframes sdb05 {
@@ -406,4 +376,4 @@ a:hover .fab {
             opacity: 0;
         }
     }
-
+}

@@ -4,9 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const gameboyTextElements = document.querySelectorAll(".gameboy-text");
 
     window.onscroll = () => {
-
         sections.forEach(sec => {
-
             let top = window.scrollY;
             let offset = sec.offsetTop - 150;
             let height = sec.offsetHeight;
@@ -23,9 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
-            console.log(entry);
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
+                if (entry.target.classList.contains('gameboy-text')) {
+                    typeText(0, entry.target);
+                }
             } else {
                 entry.target.classList.remove('show');
             }
@@ -55,13 +55,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         typeChar(0);
-    }
-
-    function isElementVisible(element) {
-        var rect = element.getBoundingClientRect();
-        return (
-            rect.top >= 0 &&
-            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
-        );
     }
 });
