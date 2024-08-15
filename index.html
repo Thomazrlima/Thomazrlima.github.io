@@ -1,121 +1,134 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en" dir="ltr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thomaz Rodrigues Lima</title>
-    <link rel="stylesheet" href="/static/styles.css">
-    <link rel="icon" href="https://www.pokemasters.net/pokedex/thumb.php?src=/pokedex/images/pokemon/201019.png&w=200px&h=200px">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Thomaz's Portfolio</title>
+  <link rel="icon" href="Image/engineer.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Montserrat:wght@400;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </head>
-<body>
-    <script defer src="/static/script.js"></script>
-    <header>
-        <nav>
-            <a href="#about">Sobre</a>
-            <a href="#portfolio">Portfólio</a>
-            <a href="#contact">Contato</a>
-        </nav>
-    </header>
- 
-    <section id="about">
-        <img src="https://i.imgur.com/YJQz3xf.png" class ="img">
-        <h1 class="gameboy-text">Salut, je m'appelle Thomaz</h1>
-        <img src="https://i.imgur.com/7nI5v3U.png"  class="img">
-        <p class="intro2">Estou estudando Ciência da Computação no Cesar School e tenho interesse em Inteligência Artificial, Visão Computacional e sua aplicação na história. Tenho experiência em Python, C, Java, HTML, CSS, Django e SQLite.</p>
-        <div class="btn-container">
-            <a href="#portfolio"><span></span></a>
-        </div>
-    </section>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WZXPVQDR2Q"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'G-WZXPVQDR2Q');
+</script>
+<body class="container-fluid body_section">
+        <header>
+              <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand brand-name" href="#">Thomaz Lima</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+        
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="Education.html">Education</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="skill.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="Project.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link headerachor" href="contact.html">Contact Me</a>
+                    </li>
+                  </ul>
+              </nav>
+          </header>
 
-    <img src="https://i.imgur.com/5q7baqi.png" class="imgpor">
+          <section id = "Home">
+              <div class="row column1">
+                <div class="col-lg-6 col-md-6 first-image">
+                    <img class = "boyimage" src="Image/20200630_162659.gif" alt="">
+                </div>  
+                  <div class="col-lg-6 section-1">
+                      <h1 class = "Hello">Hello! I'm Thomaz <span class="wave">👋</span></h1>
+                      <p>I am Thomaz, an early-career developer with a background in Computer Science from Cesar School.
+                         Aand I am seeking opportunities to apply and expand my knowledge in the tech field.</p>
+                          <div class=social_media_icon>
+                            <a class="btn" href="https://www.linkedin.com/in/thomazrlima/" target=_blank>
+                              <i class="fab fa-linkedin" aria-hidden="true"></i>
+                            </a>
+                            <a class="btn" href="https://github.com/Thomazrlima" target=_blank>
+                              <i class="fab fa-github"></i>
+                            </a>
+                            <a class="btn" href="mailto:thomazlima21@hotmail.com" target=_blank>
+                              <i class="fab fa-google"></i>
+                            </a>
+                          </div>
+                  </div>
+                  <div class="Image-boy col-lg-6"><img class="boy" src="Image/Boy-image.png" alt=""></div>
+              </div>
+          </section>
 
-    <div class = "divportifolio">
-        <section id="portfolio">
-                <div class="card-wrapper">
-                <div class="card hidden">
-                    <a href="https://github.com/P-E-N-T-E-S/Kolekto" target="_blank">
-                    <img src="https://i.imgur.com/ahxER3i.png">
-                    <div class="card-content">
-                        <h2>KOLEKTO</h2>
-                        <p>O Kolekto é um aplicativo com o objetivo de facilitar a compra e venda de produtos colecionáveis, conectando colecionadores e entusiastas.<br><br>Django, HTML, CSS e JavaScript.</p>
-                    </div>
-                    </a>
+
+          <section id=Whatido>
+            <h1>What I Do ?</h1>
+              <div class="row feature-2">
+                <div class="col-lg-6 col-md-6 feature-web">
+                  <h1 class="Feature-Heading">Web Development</h1>
+                  <ul class = "dev-icon">
+                    <li><i class="fab fa-html5 fa-5x" style="color:#e34f26"></i></li>
+                    <li><i class="fab fa-css3-alt fa-5x" style="color:#1572b6"></i></li>
+                    <li><i class="fab fa-bootstrap fa-5x" style="color:#543b79"></i></li>
+                    <li><i class="fab fa-js-square fa-5x" style="color:#f7df1e"></i></li>
+                    <li><i class="fab fa-figma fa-5x" style="color:#f24e1e"></i></li>
+                
+                  </ul>
+                  <div class = "Data-Analytic">
+                    <p class ="Features-paragraph">
+                       ➡️ Development of fully responsive website frontends using HTML, CSS, Bootstrap, and JavaScript.</p>
+                    <p  class ="Features-paragraph">
+                       ➡️ Knowledge in frontend (without frameworks) and backend, with experience in Python, Django, and SQLite.</p>
+                      <p  class ="Features-paragraph">
+                       ➡️ Interest in expanding skills in additional technologies, including React, NodeJS, and Flask, to enhance versatility and expertise in web development.</p>
+                      </div>
                 </div>
-                <div class="card hidden">
-                    <a href="https://github.com/P-E-N-T-E-S/Pris.ME" target="_blank">
-                    <img src="https://i.imgur.com/nPMRrzT.png">
-                    <div class="card-content">
-                        <h2>Pris.ME</h2>
-                        <p>O Pris.ME é uma plataforma white-label projetada para auxiliar ONGs na gestão eficiente de suas operações.<br><br>Django, HTML e CSS.</p>
-                    </div>
-                    </a>
+                <div class="col-lg-6 col-md-6 Feature-second-image ">
+                  <img class = "Feature-svg-image" src="Image/website.png" alt="">
                 </div>
-                <div class="card hidden">
-                    <a href="https://github.com/P-E-N-T-E-S/Pong2" target="_blank">
-                    <img src="https://i.imgur.com/0tBNqfv.png">
-                    <div class="card-content">
-                        <h2>PONG 2</h2>
-                        <p>O Pong2 é uma reinvenção do clássico jogo Pong incluindo novos recursos.<br><br>C</p>
-                    </div>
-                    </a>
-                </div>
-                <div class="card hidden">
-                    <a href="https://github.com/P-E-N-T-E-S/Archives.Sol" target="_blank">
-                    <img src="https://i.imgur.com/vuHhoKm.png">
-                    <div class="card-content">
-                        <h2>Archives.Sol</h2>
-                        <p>O Archives.Sol é um repositório de banco de dados abrangente que engloba áudios, fotos, vídeos e textos. Ele é alimentado por contribuições da comunidade e está disponível para uso por todos os interessados.<br>Python, HTML, CSS, Rust, JavaScript</p>
-                    </div>
-                    </a>
-                </div>
-        </section>
-    </div>
-
-    <div id="hardskills">
-        <p class="fame">HALL OF FAME</p>
-        <div class="hall">
-            <div class="glory">
-                <img src="https://i.imgur.com/KY90CFi.png">
-                <p class="intro">no. 051 <br>Arbok<br>  /Python</p>
-            </div>
-            <div class="glory">
-                <img src="https://i.imgur.com/3joH8Aa.png">
-                <p class="intro">no. 184 <br>Eevee<br>  /C</p>
-            </div>
-            <div class="glory">
-                <img src="https://i.imgur.com/N3wKF2J.png">
-                <p class="intro">no. 187 <br>Flareon<br>  /Java</p>
-            </div>
-            <div class="glory">
-                <img src="https://i.imgur.com/nwd581s.png">
-                <p class="intro">no. 188 <br>Espeon<br>  /Rust</p>
-            </div>
-            <div class="glory">
-                <img src="https://i.imgur.com/8N6GCNU.png">
-                <p class="intro">no. 92 <br>Ditto<br>  /CSS</p>
-            </div>
-            <div class="glory">
-                <img src="https://i.imgur.com/wPnRoj2.png">
-                <p class="intro">no. 94 <br>Forretress<br>  /HTML</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="divcontato">
-        <section id="contact" class="hidden">
-            <h1 class="gameboy-text">contato</h1>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/thomazrlima/" class="social-icon" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.github.com/Thomazrlima" class="social-icon" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="mailto:thomazlima21@hotmail.com" class="social-icon" target="_blank"><i class="fa fa-envelope"></i></a>   >
-            </div>
-        </section>
-    </div>
-
-    <footer>
-        <div>Desenvolvido por Thomaz</div>
-        <div>Todos os direitos reservados &copy;</div>
-    </footer>
+              </div>
+              <div class="row feature-3">
+                <div class = "col-lg-6 col-md-6 Feature-third-image">
+                    <img class = "Feature-svg-image-3" src="Image/Coding.png" alt="">
+                  </div>
+                  <div class="col-lg-6 col-md-6 feature-coding">
+                    <h1 class="Feature-Heading">Data Structures and Algorithms</h1>
+                    <ul class = "dev-icon">
+                     <li></li>
+                     <li><i class="fas fa-laptop-code fa-4x"></i></li>
+                     
+                     <li><i class="fas fa-file-code fa-4x" style="color: #a8afcb;"></i></li>
+                    </ul>
+                    <div class = "Data-Analytic">
+                      <p class ="Features-paragraph">
+                         ➡️ I have knowledge of Data Structures such as Hash Tables, Trees, Tries, Graphs, and various algorithms for solving problems efficiently.</p>
+                      <p  class ="Features-paragraph">
+                         ➡️ Recognizing that Data Structures and Algorithms are the core of programming, I enjoy solving programming challenges on various competitive platforms like Beecrowd and others.</p>
+                        </div>
+                  </div>
+              </div>
+               
+        
+          </section>
+    <footer class=footer>Made by Thomaz Lima</footer>
 </body>
 </html>
