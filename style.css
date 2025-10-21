@@ -268,26 +268,37 @@ section.sobre .flex {
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff1d;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section.portfolio .flex {
-    justify-content: space-around;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
     margin-top: 60px;
+    padding: 0 20px;
 }
 
 .img-port {
     width: 360px;
     height: 460px;
     background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
+    background-position: center;
+    transition: all 8s ease;
     cursor: pointer;
     border-radius: 40px;
     position: relative;
+    margin: 0 auto;
 }
 
 .img-port:hover {
     background-position: 100% 100%;
+    box-shadow: 0 0 30px rgba(4, 148, 234, 0.3);
 }
 
 .overlay {
@@ -296,20 +307,37 @@ section.portfolio .flex {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #000000b8;
+    background-color: rgba(0, 0, 0, 0.85);
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    font-weight: 600;
-    color: #fff;
+    padding: 30px;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
     opacity: 0;
-    transition: .5s;
+    transition: all 0.5s ease;
 }
 
 .overlay:hover {
     opacity: 1;
+}
+
+.overlay .project-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #0494ea;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.overlay .project-description {
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    max-width: 280px;
+    margin: 0 auto;
 }
 
 /* ESTILO DO FORMULÁRIO DE CONTATO */
@@ -452,17 +480,33 @@ footer .line-footer p a {
 
     /* PORTFÓLIO */
     section.portfolio {
-        padding: 80px 8%;
+        padding: 60px 8%;
+        min-height: auto;
     }
 
     .img-port {
         width: 100%;
         max-width: 360px;
+        height: 400px;
         margin: 0 auto;
     }
     
     section.portfolio .flex {
-       gap: 60px;
+        gap: 40px;
+        padding: 0;
+    }
+
+    .overlay {
+        padding: 20px;
+    }
+
+    .overlay .project-title {
+        font-size: 20px;
+    }
+
+    .overlay .project-description {
+        font-size: 15px;
+        max-width: 260px;
     }
 
     /* RODAPÉ */
