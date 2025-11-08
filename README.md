@@ -4,7 +4,7 @@
   <img
     width="350"
     display="inline-block"
-    src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/5b6ae67a-b4ae-4736-a040-685421429e2e/daf6b9x-ea49d2c9-2c53-4471-b120-62c073a69a16.png/v1/fill/w_1024,h_366,q_80,strp/final_fantasy_logo_art__pokemon_red_and_blue_by_mast3r_rainb0w_daf6b9x-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzY2IiwicGF0aCI6IlwvZlwvNWI2YWU2N2EtYjRhZS00NzM2LWEwNDAtNjg1NDIxNDI5ZTJlXC9kYWY2Yjl4LWVhNDlkMmM5LTJjNTMtNDQ3MS1iMTIwLTYyYzA3M2E2OWExNi5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.lYuHQHMZnY17i6YC7yHrQQ_zVIMmPCIM9tgTanVFamQ"
+    src="https://www.swic.edu/wp-content/uploads/2021/05/portfolio.png"
     alt="Logo do Portfólio"
   />
 </p>
